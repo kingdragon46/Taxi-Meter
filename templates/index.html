@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Meters
+{% endblock %}
+
+{% block content %}
+  <div>
+    <div class="container">
+        <div class="card text-center mb-2">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Clickable Links</h5>
+              <a href="/api/render_meters" class="btn btn-primary">Meters</a>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Api Endpoints</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Create Meter: <b> /api/meters (POST) </b></li>
+                <li class="list-group-item">Get Single Meter By ID: <b> /api/meters/int:id (GET) </b></li>
+                <li class="list-group-item">Create Meter Data: <b> /api/meters/int:id/meter_data (POST)</b></li>
+              </ul>
+            </div>
+            <div class="card-footer text-muted">
+            </div>
+          </div>
+    </div>
+  </div>
+{% endblock %}

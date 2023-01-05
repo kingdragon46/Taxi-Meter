@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Meters
+{% endblock %}
+
+{% block content %}
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <br />These are all the meters that are available
+        </div>
+        <div class="col-6">
+          <br />
+          <ul class="list-group">
+            {% for meter in meters %}
+              <li class="list-group-item" style="text-align: center;">
+                <a href="/api/meters/{{ meter.id }}/render_meter_data">{{ meter.label }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
