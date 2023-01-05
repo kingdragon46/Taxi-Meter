@@ -32,26 +32,24 @@ Start the server
 
 ## API Reference
 
-#### Get Meters
+#### Get/Post Meters
+This route allows you to create a new meter by sending a POST request with a JSON body containing a label field. It also allows you to retrieve a list of all meters by sending a GET request.
 
 ```http
-  GET /api/meters
+  /api/meters
 ```
 
-#### Create Meters
-
-```http
-  POST /api/meters
-```
 
 #### Get meter data by id
+This route allows you to retrieve a single meter by sending a GET request and specifying the id of the meter in the URL.
 
 ```http
   GET /api/meters/<int:id>/meter_data
 ```
 
 
-#### Create meter data by id
+#### Retrieve/Create meter data by id
+This route allows you to create new meter data for a specific meter by sending a POST request with a JSON body containing a value field and specifying the id of the meter in the URL. It also allows you to retrieve all meter data for a specific meter by sending a GET request and specifying the id of the meter in the URL.
 
 ```http
   POST /api/meters/<int:id>/meter_data
