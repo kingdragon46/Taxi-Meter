@@ -52,6 +52,6 @@ This route allows you to retrieve a single meter by sending a GET request and sp
 This route allows you to create new meter data for a specific meter by sending a POST request with a JSON body containing a value field and specifying the id of the meter in the URL. It also allows you to retrieve all meter data for a specific meter by sending a GET request and specifying the id of the meter in the URL.
 
 ```http
-  POST /api/meters/<int:id>/meter_data
+  /api/meters/<int:id>/meter_data
 ```
 
