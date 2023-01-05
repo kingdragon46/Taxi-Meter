@@ -9,7 +9,6 @@
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th scope="col">#</th>
           <th scope="col">Meter ID</th>
           <th scope="col">Time Stamp</th>
           <th scope="col">Value</th>
@@ -19,7 +18,6 @@
       <tbody>
         {% for meter in meterData %}
           <tr>
-            <th scope="row">{{ meter.id }}</th>
             <td>{{ meter.meter_id }}</td>
             <td>{{ meter.time_stamp }}</td>
             <td>{{ meter.value }}</td>
